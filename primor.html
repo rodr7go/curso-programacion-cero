@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Numero primo</title>
+</head>
+<body>
+
+	<script>
+		
+		var n , i;
+		var c = true;
+		n = parseInt(prompt('Programa para averiguar si un numero es primo  \n Digite el numero a evaluar'));
+
+		if (n <= 1) {
+			c = false;
+			alert(' no es primo')
+		} else {
+			if (n != 2) {
+				if (n % 2 == 0) {
+					alert(n + ' es par y no es primo');
+					c = false;
+				} else {
+					for (i == 3; i <= Math.sqrt(n); i++) {
+						c = false
+					}
+				}
+			}
+		}
+		if (c == true) {
+			if (n == 2){
+				alert(n + ' es primo y par')
+			} else{
+				alert(n + ' es primo');	
+			}
+		}
+
+	// var n, i, c;
+	// c = 0;
+	// n = prompt('Programa para averiguar si un numero es primo \n Digite el numero a evaluar');
+
+	// if (n > 1 ) {
+	// 	for (i = 1; i <= n; i++) {
+	// 		if (n % i == 0) {
+	// 			c = c + 1;
+	// 		}
+	// 	}
+	// 	if (c == 2) {
+	// 		alert(n + ' es primo');
+	// 	}
+	// 	else {
+	// 		alert(n +' no es primo')
+	// 	}
+	// }else {
+	// 	alert(n + ' no es primo');
+	// }
+
+
+
+
+	</script>
+</body>
+</html>

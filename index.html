@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Condicionales</title>
+</head>
+<body>
+
+
+	<script>
+		
+	// let a = true;
+	// if (a) {
+	// 	console.log('a es verdadero');
+	// }
+
+	let mayoriaEdad = 18, edad, faltante;
+	edad = prompt('Bienvenido a la disco la Rumba \n Solo pueden ingresar mayores de edad \n ingresa tu edad');
+	if (edad >= mayoriaEdad) {
+		alert('Bienvenido');
+	}else{
+		faltante = mayoriaEdad - edad;
+		let years;
+		if (faltante == 1 ) years = ' año';
+		else years = ' años';		
+
+		alert('Lo sentimos no puedes ingresar a la disco, puedes ingresar dentro de ' + faltante + years);
+	}
+
+	</script>
+</body>
+</html>

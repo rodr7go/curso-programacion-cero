@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Factorial</title>
+</head>
+<body>
+
+<script>
+	let n = parseInt(prompt('Digite un numero: '));
+	let i = 1;
+	let factorial = 1;
+
+	if (n > 0 ) {
+		while ( i <= n){
+			factorial = factorial * i;
+			i++;
+		}
+		console.log('El factorial de ' + n + ' es ' + factorial);
+	}else {
+		alert('Desbes digitar el número entero positivo');
+		window.location.reload();
+	}
+</script>
+	
+</body>
+</html>
