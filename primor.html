@@ -21,18 +21,19 @@
 					alert(n + ' es par y no es primo');
 					c = false;
 				} else {
-					for (i == 3; i <= Math.sqrt(n); i++) {
+					for (i == 3; i <= Math.sqrt(n); i + 2) {
 						c = false
 					}
 				}
 			}
 		}
 		if (c == true) {
-			if (n == 2){
-				alert(n + ' es primo y par')
-			} else{
-				alert(n + ' es primo');	
-			}
+			alert(n + ' es primo');
+			// if (n == 2){
+			// 	alert(n + ' es primo y par')
+			// } else{
+			// 	alert(n + ' es primo');	
+			// }
 		}
 
 	// var n, i, c;
