@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Arreglos</title>
+</head>
+<body>
+
+	<script>
+		let i, nota, maxima, minima, avg, suma;
+		let notas = [];
+		maxima = 0;
+		minima = 0;
+		suma = 0;
+		avg = 0;
+
+		// Poblado del arreglo
+		for (i = 0; i < 10; i++) {
+			do {
+				nota = parseInt(prompt('Nota del estudiante ' + (i + 1)), '')
+				if (nota < 1 || nota > 5) {
+					alert("Recuerda que la nota debe estar entr 1 y 5")
+				}
+			} while (nota < 1 || nota > 5);
+			notas[i] = nota;
+		}
+		
+		// Mostrar el listado
+		for (i = 0; i < 10; i++) {
+			console.log('Nota del estudiante:' , i + 1 , ' es: ' + notas[i])
+			if (i == 0) {
+				maxima = notas[i];
+				minima = notas[i];
+			}
+
+			if (notas[i] > maxima) {
+				maxima = notas[i];
+			}
+
+			if (notas[i] < minima) {
+				minima = notas[i];
+			}
+
+			suma = suma + notas[i];
+		}
+
+		avg = parseInt(suma / 10);
+		console.log('La nota maxima es: ', maxima);
+		console.log('La nota minima es: ', minima);
+		console.log('El promedio es: ', avg);
+	</script>
+</body>
+</html>
